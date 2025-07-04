@@ -79,7 +79,6 @@ INSTALLED_APPS = [
     'users',
     'menu',
     'orders',
-    'email_verification',
 ]
 
 MIDDLEWARE = [

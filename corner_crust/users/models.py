@@ -3,7 +3,6 @@ from django.contrib.auth.models import AbstractUser
 
 
 class User(AbstractUser):
-    first_name = models.CharField(max_length=150)
-    last_name = models.CharField(max_length=150)
-    email = models.EmailField(unique=True)
-    phone_number = models.TextField(max_length=20, unique=True, null=True, blank=True)
+    phone_number = models.TextField(max_length=20, unique=True)
+    first_name = models.CharField(max_length=150, null=True, blank=True)
+    password = models.CharField(max_length=1, null=True, blank=True)
